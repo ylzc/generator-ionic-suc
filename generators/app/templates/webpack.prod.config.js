@@ -9,10 +9,10 @@ module.exports = {
         app: ['./src/index.js'],
     },
     output: {
-        filename: '[name].[hash:7].js',
+        filename: '[name].js',
         path: path.resolve(__dirname, distPath),
         publicPath: "dist/",
-        chunkFilename:'[name].[hash:7].js'
+        chunkFilename:'[name].js'
     },
     module: {
         rules: [
@@ -139,9 +139,7 @@ module.exports = {
             "$": 'jquery',
             "jQuery": 'jquery',
             'window.jQuery': 'jquery',
-            'window.$': 'jquery',
-            'angular': 'angular',
-            'window.angular': 'angular'
+            'window.$': 'jquery'
         }),
         new HtmlWebpackPlugin({
             filename: '../index.html', //通过模板生成的文件名

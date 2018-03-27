@@ -78,7 +78,7 @@ module.exports = class extends Generator {
         this.fs.copy(this.templatePath('platforms'), this.destinationPath('platforms'));
         this.fs.copy(this.templatePath('plugins'), this.destinationPath('plugins'));
         this.fs.copy(this.templatePath('resources'), this.destinationPath('resources'));
-        this.fs.copy(this.templatePath('www/lib'), this.destinationPath('www/lib'));
+        this.fs.copy(this.templatePath('www/dll'), this.destinationPath('www/dll'));
 
         this.fs.copyTpl(this.templatePath('src'), this.destinationPath('src'), this.props, {
             interpolate: /<%=([\s\S]+?)%>/g

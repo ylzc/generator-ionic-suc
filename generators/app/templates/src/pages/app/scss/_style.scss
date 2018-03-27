@@ -1,0 +1,445 @@
+.col-15 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 15%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 15%;
+  -ms-flex: 0 0 15%;
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+
+.col-30 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.col-35 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 35%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 35%;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  max-width: 35%;
+}
+
+.col-45 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 45%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 45%;
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.col-55 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 55%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 55%;
+  -ms-flex: 0 0 55%;
+  flex: 0 0 55%;
+  max-width: 55%;
+}
+
+.col-65 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 65%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 65%;
+  -ms-flex: 0 0 65%;
+  flex: 0 0 65%;
+  max-width: 65%;
+}
+
+.col-70 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 70%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 70%;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.col-85 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 85%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 85%;
+  -ms-flex: 0 0 85%;
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+
+.nowrap,
+.noWrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar.bar-nobottom,
+.bar.bar-nobottom {
+  background-image: none;
+}
+
+.slide-in-right {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(100%);
+}
+
+.slide-in-right.ng-enter, .slide-in-right > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+}
+
+.slide-in-right.ng-enter-active, .slide-in-right > .ng-enter-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.slide-in-right.ng-leave, .slide-in-right > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.slide-in-left {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(100%);
+}
+
+.slide-in-left.ng-enter, .slide-in-left > .ng-enter {
+  -webkit-transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+  transition: all cubic-bezier(0.1, 0.7, 0.1, 1) 400ms;
+}
+
+.slide-in-left.ng-enter-active, .slide-in-left > .ng-enter-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.slide-in-left.ng-leave, .slide-in-left > .ng-leave {
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+.button.disabled, .button[disabled] {
+  opacity: 1;
+  cursor: default !important;
+  pointer-events: none;
+}
+
+.popover-arrow::after {
+  border: 1px solid #eee;
+}
+
+ion-popover-view.popover-view.popover {
+  margin-top: 0;
+  border-radius: 0;
+  background-color: #fff;
+}
+
+.button-xj {
+  height: 100%;
+  width: 100%;
+  line-height: 34px;
+  text-align: center;
+}
+
+.popover-view.popover .item {
+  background-color: #fff;
+  border-color: #cecece;
+}
+
+.popover-view.popover .scroll-content {
+  margin: 0;
+}
+
+.popover-view.popover.popover-bottom {
+  margin-top: 32px;
+}
+
+.own-list-animation.ng-enter {
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn .5s;
+}
+
+.own-list-animation.ng-enter-stagger {
+  -webkit-animation-delay: 150ms;
+  animation-delay: 150ms;
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration: 0;
+  animation-duration: 0;
+}
+
+.ios-popup .popup {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.ios-popup .popup-head {
+  border-bottom: none;
+  padding: 0;
+}
+
+.ios-popup .popup-body {
+  padding: 15px 15px;
+}
+
+.ios-popup .popup-buttons {
+  height: 41px;
+  min-height: 41px;
+  overflow: hidden;
+  padding: 0;
+  border-top: 1px solid #eee;
+}
+
+.ios-popup .popup-buttons .button {
+  min-height: 40px;
+  height: 40px;
+  max-height: 40px;
+  padding: 0;
+  line-height: 40px;
+  outline: none;
+  border: none;
+  border-right: 1px solid #eee;
+  margin-right: 0;
+  color: rgb(49, 171, 150);
+}
+
+.ios-popup .popup-buttons .button:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.ios-popup .popup-buttons .button:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+input[readonly]::-webkit-input-placeholder{
+  color: #fff;
+}
+
+.item-complex .item-content, .item-radio .item-content {
+  height: 100%;
+}
+
+.animated.modal.bounceIn.ng-leave {
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+.animated.modal.bounceInDown.ng-leave {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+}
+
+.animated.modal.bounceInLeft.ng-leave {
+  -webkit-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft;
+}
+
+.animated.modal.bounceInRight.ng-leave {
+  -webkit-animation-name: bounceOutRight;
+  animation-name: bounceOutRight;
+}
+
+.animated.modal.bounceInUp.ng-leave {
+  -webkit-animation-name: bounceOutDown;
+  animation-name: bounceOutDown;
+}
+
+.animated.modal.bounceOut.ng-leave {
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+.animated.modal.fadeIn.ng-leave {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.animated.modal.fadeInDown.ng-leave {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+.animated.modal.fadeInDownBig.ng-leave {
+  -webkit-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig;
+}
+
+.animated.modal.fadeInLeft.ng-leave {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+.animated.modal.fadeInLeftBig.ng-leave {
+  -webkit-animation-name: fadeOutLeftBig;
+  animation-name: fadeOutLeftBig;
+}
+
+.animated.modal.fadeInRight.ng-leave {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
+
+.animated.modal.fadeInRightBig.ng-leave {
+  -webkit-animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig;
+}
+
+.animated.modal.fadeInUp.ng-leave {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+.animated.modal.fadeInUpBig.ng-leave {
+  -webkit-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig;
+}
+
+.animated.modal.flipInX.ng-leave {
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+}
+
+.animated.modal.flipInY.ng-leave {
+  -webkit-animation-name: flipOutY;
+  animation-name: flipOutY;
+}
+
+.animated.modal.lightSpeedIn.ng-leave {
+  -webkit-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+}
+
+.animated.modal.rotateIn.ng-leave {
+  -webkit-animation-name: rotateOut;
+  animation-name: rotateOut;
+}
+
+.animated.modal.rotateInDownLeft.ng-leave {
+  -webkit-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft;
+}
+
+.animated.modal.rotateInDownRight.ng-leave {
+  -webkit-animation-name: rotateOutDownRight;
+  animation-name: rotateOutDownRight;
+}
+
+.animated.modal.rotateInUpLeft.ng-leave {
+  -webkit-animation-name: rotateOutUpLeft;
+  animation-name: rotateOutUpLeft;
+}
+
+.animated.modal.rotateInUpRight.ng-leave {
+  -webkit-animation-name: rotateOutUpRight;
+  animation-name: rotateOutUpRight;
+}
+
+.animated.modal.slideInUp.ng-leave {
+  -webkit-animation-name: slideOutDown;
+  animation-name: slideOutDown;
+}
+
+.animated.modal.slideInDown.ng-leave {
+  -webkit-animation-name: slideOutUp;
+  animation-name: slideOutUp;
+}
+
+.animated.modal.slideInLeft.ng-leave {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+}
+
+.animated.modal.slideInRight.ng-leave {
+  -webkit-animation-name: slideOutRight;
+  animation-name: slideOutRight;
+}
+
+.animated.modal.zoomIn.ng-leave {
+  -webkit-animation-name: zoomOut;
+  animation-name: zoomOut;
+}
+
+.animated.modal.zoomInDown.ng-leave {
+  -webkit-animation-name: zoomOutDown;
+  animation-name: zoomOutDown;
+}
+
+.animated.modal.zoomInLeft.ng-leave {
+  -webkit-animation-name: zoomOutLeft;
+  animation-name: zoomOutLeft;
+}
+
+.animated.modal.zoomInRight.ng-leave {
+  -webkit-animation-name: zoomOutRight;
+  animation-name: zoomOutRight;
+}
+
+.animated.modal.zoomInUp.ng-leave {
+  -webkit-animation-name: zoomOutUp;
+  animation-name: zoomOutUp;
+}
+
+.animated.modal.rollIn.ng-leave {
+  -webkit-animation-name: rollOut;
+  animation-name: rollOut;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.range {
+  width: auto;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eee), color-stop(100%, #eee));
+  background: linear-gradient(to right, #eee 0%, #eee 100%);
+  background-position: center;
+  background-size: calc(99% - 42px) 4px;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  height: 100%;
+}
+
+.scroll{
+  height: 100%;
+}
+
+div.div{
+  width: 100%;
+  height: auto;
+}

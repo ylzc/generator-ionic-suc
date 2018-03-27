@@ -1,0 +1,156 @@
+require("./3dtouch");
+require("./actionSheet");
+require('./adMob');
+require('./appAvailability');
+require('./appRate');
+require('./appVersion');
+require('./backgroundGeolocation');
+require('./badge');
+require('./barcodeScanner');
+require('./batteryStatus');
+require('./beacon');
+require('./ble');
+require('./bluetoothSerial');
+require('./brightness');
+require('./calendar');
+require('./camera');
+require('./capture');
+require('./cardIO');
+require('./clipboard');
+require('./contacts');
+require('./datepicker');
+require('./device');
+require('./deviceMotion');
+require('./deviceOrientation');
+require('./dialogs');
+require('./emailComposer');
+require('./facebook');
+require('./facebookAds');
+require('./file');
+require('./fileOpener2');
+require('./fileTransfer');
+require('./flashlight');
+require('./flurryAds');
+require('./ga');
+require('./geolocation');
+require('./globalization');
+require('./googleAds');
+require('./googleAnalytics');
+require('./googleMap');
+require('./googlePlayGame');
+require('./googlePlus');
+require('./healthKit');
+require('./httpd');
+require('./iAd');
+require('./imagePicker');
+require('./inappbrowser');
+require('./insomnia');
+require('./instagram');
+require('./keyboard');
+require('./keychain');
+require('./launchNavigator');
+require('./localNotification');
+require('./media');
+require('./mMediaAds');
+require('./mobfoxAds');
+require('./mopubAds');
+require('./nativeAudio');
+require('./network');
+require('./pinDialog');
+require('./preferences');
+require('./printer');
+require('./progressIndicator');
+require('./push');
+require('./push_v5');
+require('./recentsControl');
+require('./screenshot');
+require('./serial');
+require("./sms");
+require('./socialSharing');
+require('./spinnerDialog');
+require('./splashscreen');
+require('./sqlite');
+require('./statusbar');
+require('./toast');
+require('./touchid');
+require('./tts');
+require('./upsPush');
+require("./vibration");
+require('./videoCapturePlus');
+require('./zip');
+angular.module('ionCordova.plugins', [
+  'ionCordova.plugins.3dtouch',
+  'ionCordova.plugins.actionSheet',
+  'ionCordova.plugins.adMob',
+  'ionCordova.plugins.appAvailability',
+  'ionCordova.plugins.appRate',
+  'ionCordova.plugins.appVersion',
+  'ionCordova.plugins.backgroundGeolocation',
+  'ionCordova.plugins.badge',
+  'ionCordova.plugins.barcodeScanner',
+  'ionCordova.plugins.batteryStatus',
+  'ionCordova.plugins.beacon',
+  'ionCordova.plugins.ble',
+  'ionCordova.plugins.bluetoothSerial',
+  'ionCordova.plugins.brightness',
+  'ionCordova.plugins.calendar',
+  'ionCordova.plugins.camera',
+  'ionCordova.plugins.capture',
+  'ionCordova.plugins.clipboard',
+  'ionCordova.plugins.contacts',
+  'ionCordova.plugins.datePicker',
+  'ionCordova.plugins.device',
+  'ionCordova.plugins.deviceMotion',
+  'ionCordova.plugins.deviceOrientation',
+  'ionCordova.plugins.dialogs',
+  'ionCordova.plugins.emailComposer',
+  'ionCordova.plugins.facebook',
+  'ionCordova.plugins.facebookAds',
+  'ionCordova.plugins.file',
+  'ionCordova.plugins.fileTransfer',
+  'ionCordova.plugins.fileOpener2',
+  'ionCordova.plugins.flashlight',
+  'ionCordova.plugins.flurryAds',
+  'ionCordova.plugins.ga',
+  'ionCordova.plugins.geolocation',
+  'ionCordova.plugins.globalization',
+  'ionCordova.plugins.googleAds',
+  'ionCordova.plugins.googleAnalytics',
+  'ionCordova.plugins.googleMap',
+  'ionCordova.plugins.googlePlayGame',
+  'ionCordova.plugins.googlePlus',
+  'ionCordova.plugins.healthKit',
+  'ionCordova.plugins.httpd',
+  'ionCordova.plugins.iAd',
+  'ionCordova.plugins.imagePicker',
+  'ionCordova.plugins.inAppBrowser',
+  'ionCordova.plugins.instagram',
+  'ionCordova.plugins.keyboard',
+  'ionCordova.plugins.keychain',
+  'ionCordova.plugins.launchNavigator',
+  'ionCordova.plugins.localNotification',
+  'ionCordova.plugins.media',
+  'ionCordova.plugins.mMediaAds',
+  'ionCordova.plugins.mobfoxAds',
+  'ionCordova.plugins.mopubAds',
+  'ionCordova.plugins.nativeAudio',
+  'ionCordova.plugins.network',
+  'ionCordova.plugins.pinDialog',
+  'ionCordova.plugins.preferences',
+  'ionCordova.plugins.printer',
+  'ionCordova.plugins.progressIndicator',
+  'ionCordova.plugins.push',
+  'ionCordova.plugins.push_v5',
+  'ionCordova.plugins.sms',
+  'ionCordova.plugins.socialSharing',
+  'ionCordova.plugins.spinnerDialog',
+  'ionCordova.plugins.splashscreen',
+  'ionCordova.plugins.sqlite',
+  'ionCordova.plugins.statusbar',
+  'ionCordova.plugins.toast',
+  'ionCordova.plugins.touchid',
+  'ionCordova.plugins.vibration',
+  'ionCordova.plugins.videoCapturePlus',
+  'ionCordova.plugins.zip',
+  'ionCordova.plugins.insomnia'
+]);

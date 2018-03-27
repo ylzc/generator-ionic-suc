@@ -144,8 +144,6 @@ module.exports = {
             "jQuery": 'jquery',
             'window.jQuery': 'jquery',
             'window.$': 'jquery',
-            'angular': 'angular',
-            'window.angular': 'angular'
         }),
         new HtmlWebpackPlugin({
             filename: '../index.html', //通过模板生成的文件名
@@ -168,11 +166,11 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         inline: true,
-        contentBase: path.join(__dirname, distPath),
+        contentBase: path.join(__dirname, "www"),
         hot: true,
         index: 'index.html',
         port: 8100,
-        setup(app) {
+        before(app) {
             app.get('/cordova.js', function (req, res) {
                 res.setHeader('Content-Type', 'application/javascript');
                 res.write('');

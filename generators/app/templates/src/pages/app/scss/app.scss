@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+$base-color:#222;
+$checkbox-width: 20px;
+$checkbox-height: 20px;
+$item-padding: 10px;
+$item-font-size: 14px;
+$item-icon-font-size: 25px;
+$popover-width: 180px;
+$popover-height: 200px;
+$range-slider-width: 20px;
+$range-slider-height: 20px;
+$bar-subheader-height: 44px;
+$ios-statusbar-height: 0px;
+$modal-inset-mode-break-point: 1920px;
+$badge-font-size:10px;
+$badge-line-height:14px;
+$ionicons-font-path: "~ionic-webpack/fonts";
+
+@import "../../../../node_modules/ionic-webpack/scss/ionic";
+
+@import "style";

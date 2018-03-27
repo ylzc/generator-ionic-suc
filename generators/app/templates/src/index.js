@@ -1,1 +1,2 @@
-const appName = "<%= name %>";
+import "./config";
+import "./pages";

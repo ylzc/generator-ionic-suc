@@ -6,10 +6,10 @@
           content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width,viewport-fit=cover">
     <title><%= name %></title>
     <link rel="manifest" href="manifest.json">
+    <script src="cordova.js"></script>
 </head>
-<body class="ionic-body">
+<body ng-app="sucsoft" ng-controller="appCtrl" class="ionic-body">
     <ion-nav-view></ion-nav-view>
-    <script src="cordova.js" async defer></script>
     <script src="dll/lib.js"></script>
 </body>
 </html>

@@ -10,15 +10,10 @@ module.exports = {
     },
     entry: {
         "lib": [
-            'jquery',
-            'echarts',
-            'angular',
-            'angular-ui-router',
-            'angular-animate',
-            'angular-sanitize',
-            "oclazyload/dist/modules/ocLazyLoad.core",
-            "oclazyload/dist/modules/ocLazyLoad.loaders.core",
             'ionic-webpack',
+            'jquery',
+            "oclazyload/dist/modules/ocLazyLoad.core",
+            "oclazyload/dist/modules/ocLazyLoad.loaders.core"
         ],
     },
     plugins: [
