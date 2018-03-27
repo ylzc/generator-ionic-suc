@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const htmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const distPath = "www/";
 
@@ -147,7 +147,7 @@ module.exports = {
             'angular': 'angular',
             'window.angular': 'angular'
         }),
-        new htmlWebpackPlugin({
+        new HtmlWebpackPlugin({
             filename: 'index.html', //通过模板生成的文件名
             template: './www/index.html',//模板路径
             inject: true, //是否自动在模板文件添加 自动生成的js文件链接
