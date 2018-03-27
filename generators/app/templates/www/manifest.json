@@ -1,0 +1,7 @@
+{
+  "name": "<%= name %>",
+  "short_name": "<%= name %>",
+  "start_url": "index.html",
+  "display": "standalone",
+  "lang": "zh-cn"
+}
