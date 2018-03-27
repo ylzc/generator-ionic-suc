@@ -2,17 +2,17 @@ const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-const distPath = "www/";
+const distPath = "www/dist/";
 
 module.exports = {
     entry: {
         app: ['./src/index.js'],
     },
     output: {
-        filename: 'js/[name].js',
+        filename: '[name].[hash:7].js',
         path: path.resolve(__dirname, distPath),
-        publicPath: "file:///android_asset/www/",
-        chunkFilename:'js/[name].js'
+        publicPath: "dist/",
+        chunkFilename:'[name].[hash:7].js'
     },
     module: {
         rules: [
@@ -42,7 +42,7 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            name: "css/[name].[hash:7].css"
+                            name: "[name].[hash:7].css"
                         }
                     },
                     {
@@ -93,7 +93,7 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            name: "css/[name].[hash:7].css"
+                            name: "[name].[hash:7].css"
                         }
                     },
                     {
@@ -102,8 +102,8 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                                minimize: true //css压缩
-                            }
+                            minimize: true //css压缩
+                        }
                     },
                     {
                         loader: 'sass-loader',
@@ -116,7 +116,7 @@ module.exports = {
                 query: {
                     limit: 500,
                     loader: 'file-loader',
-                    name: "css/fonts/[name].[hash:7].[ext]"
+                    name: "[name].[hash:7].[ext]"
                 }
             },
             {
@@ -125,7 +125,7 @@ module.exports = {
                 query: {
                     limit: 100,
                     loader: 'file-loader',
-                    name: "img/[name].[hash:7].[ext]"
+                    name: "[name].[hash:7].[ext]"
                 }
             }
         ]
@@ -133,7 +133,7 @@ module.exports = {
     plugins: [
         new webpack.DllReferencePlugin({
             context: __dirname,
-            manifest: require('./'+distPath+'dll/manifest.json')
+            manifest: require('./www/dll/manifest.json')
         }),
         new webpack.ProvidePlugin({
             "$": 'jquery',
@@ -144,8 +144,8 @@ module.exports = {
             'window.angular': 'angular'
         }),
         new HtmlWebpackPlugin({
-            filename: 'index.html', //通过模板生成的文件名
-            template: './www/index.html',//模板路径
+            filename: '../index.html', //通过模板生成的文件名
+            template: './src/index.html',//模板路径
             inject: true, //是否自动在模板文件添加 自动生成的js文件链接
             minify: {
                 removeComments: true,//清除HTML注释
