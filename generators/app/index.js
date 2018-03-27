@@ -86,8 +86,9 @@ module.exports = class extends Generator {
 
         this.fs.copyTpl(this.templatePath('www/manifest.json'), this.destinationPath('www/manifest.json'), this.props);
 
-        this.fs.copyTpl(this.templatePath('package.json.tmpl'), this.destinationPath('package.json'), this.props);
-        this.fs.copyTpl(this.templatePath('config.xml.tmpl'), this.destinationPath('config.xml'), this.props);
+        this.fs.copyTpl(this.templatePath('package.json'), this.destinationPath('package.json'), this.props);
+        this.fs.copyTpl(this.templatePath('ionic.config.json'), this.destinationPath('ionic.config.json'), this.props);
+        this.fs.copyTpl(this.templatePath('config.xml'), this.destinationPath('config.xml'), this.props);
 
         this.fs.copy(this.templatePath('webpack.dll.config.js'), this.destinationPath('webpack.dll.config.js'));
         this.fs.copy(this.templatePath('webpack.config.js'), this.destinationPath('webpack.config.js'));
