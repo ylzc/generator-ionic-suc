@@ -84,7 +84,7 @@ module.exports = class extends Generator {
             interpolate: /<%=([\s\S]+?)%>/g
         });
 
-        this.fs.copyTpl(this.templatePath('www/manifest.json'), this.destinationPath('www/manifest.json'), this.props);
+        // this.fs.copyTpl(this.templatePath('www/manifest.json'), this.destinationPath('www/manifest.json'), this.props);
 
         this.fs.copyTpl(this.templatePath('_package.json'), this.destinationPath('package.json'), this.props);
         this.fs.copyTpl(this.templatePath('_ionic.config.json'), this.destinationPath('ionic.config.json'), this.props);

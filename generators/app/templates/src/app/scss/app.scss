@@ -17,6 +17,6 @@ $badge-font-size:10px;
 $badge-line-height:14px;
 $ionicons-font-path: "~ionic-webpack/fonts";
 
-@import "../../../../node_modules/ionic-webpack/scss/ionic";
+@import "~ionic-webpack/scss/ionic";
 
 @import "style";

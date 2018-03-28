@@ -1,8 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
-const distPath = "www/dist/";
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devtool: 'evel-source-map',
@@ -10,10 +9,9 @@ module.exports = {
         app: ['./src/index.js'],
     },
     output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, distPath),
-        publicPath: "dist/",
-        chunkFilename:'[name].js'
+        filename: 'build/[name].js',
+        path: path.resolve(__dirname, "www"),
+        chunkFilename:'build/[name].js'
     },
     module: {
         rules: [
@@ -43,11 +41,14 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            name: "[name].[hash:7].css"
+                            name: "assets/build/[name].[hash:7].css"
                         }
                     },
                     {
                         loader: "extract-loader",
+                        options: {
+                            publicPath: "../",
+                        }
                     },
                     {
                         loader: 'css-loader',
@@ -94,11 +95,14 @@ module.exports = {
                     {
                         loader: "file-loader",
                         options: {
-                            name: "[name].[hash:7].css"
+                            name: "build/[name].[hash:7].css"
                         }
                     },
                     {
                         loader: "extract-loader",
+                        options: {
+                            publicPath: "../",
+                        }
                     },
                     {
                         loader: 'css-loader',
@@ -120,7 +124,7 @@ module.exports = {
                 query: {
                     limit: 500,
                     loader: 'file-loader',
-                    name: "[name].[hash:7].[ext]"
+                    name: "assets/fonts/[name].[hash:7].[ext]"
                 }
             },
             {
@@ -129,7 +133,7 @@ module.exports = {
                 query: {
                     limit: 100,
                     loader: 'file-loader',
-                    name: "[name].[hash:7].[ext]"
+                    name: "assets/images/[name].[hash:7].[ext]"
                 }
             }
         ]
@@ -146,8 +150,8 @@ module.exports = {
             'window.$': 'jquery',
         }),
         new HtmlWebpackPlugin({
-            filename: '../index.html', //通过模板生成的文件名
-            template: './src/index.html',//模板路径
+            filename: 'index.html', //通过模板生成的文件名
+            template: 'src/index.html',//模板路径
             inject: true, //是否自动在模板文件添加 自动生成的js文件链接
             minify: {
                 removeComments: true,//清除HTML注释
@@ -161,6 +165,9 @@ module.exports = {
             },
             hash:true
         }),
+        new CopyWebpackPlugin([
+            path.resolve(__dirname, "src/manifest.json")
+        ]),
         new webpack.HotModuleReplacementPlugin()
     ],
     devServer: {
@@ -170,6 +177,7 @@ module.exports = {
         hot: true,
         index: 'index.html',
         port: 8100,
+        open: true,
         before(app) {
             app.get('/cordova.js', function (req, res) {
                 res.setHeader('Content-Type', 'application/javascript');

@@ -9,7 +9,7 @@ let view = {
                     let deferred = $q.defer();
                     require.ensure([], (require) => {
                         require("./mine.scss");
-                        let template = require('./temp.html');
+                        let template = require('./mine.html');
                         deferred.resolve(template);
                     }, 'mine');
                     return deferred.promise;
@@ -17,7 +17,7 @@ let view = {
             }
         },
         resolve: {
-            'tempModule': function ($q, $ocLazyLoad) {
+            'mineModule': function ($q, $ocLazyLoad) {
                 'ngInject';
                 let deferred = $q.defer();
                 require.ensure([], require => {

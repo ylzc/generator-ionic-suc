@@ -1,10 +1,9 @@
-import "./scss/app.scss";
-
 import "./script/config";
 import "./services";
+import "./script/directives";
 import "./script/appCtrl";
 import "./script/run";
 import "./script/routes";
 
-import "./login";
-import "./temp";
+import "../pages/login";
+import "../pages/temp";
