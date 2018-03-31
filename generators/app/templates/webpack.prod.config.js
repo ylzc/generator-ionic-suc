@@ -164,6 +164,7 @@ module.exports = {
                 minifyCSS: false//压缩页面CSS
             },
             hash:true
-        })
+        }),
+        new webpack.optimize.OccurrenceOrderPlugin()
     ],
 };

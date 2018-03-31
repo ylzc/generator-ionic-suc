@@ -168,7 +168,8 @@ module.exports = {
         new CopyWebpackPlugin([
             path.resolve(__dirname, "src/manifest.json")
         ]),
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ],
     devServer: {
         historyApiFallback: true,
